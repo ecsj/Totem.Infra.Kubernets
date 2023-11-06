@@ -1,6 +1,6 @@
 module "prod" {
-    source = "../../modules/aws"
+  source = "../../modules/aws"
 
-    cluster_name    = "producao"
-    vpc_name        = "VPC-ECS"
+  cluster_name = "producao"
+  vpc_name     = "VPC-ECS"
 }
