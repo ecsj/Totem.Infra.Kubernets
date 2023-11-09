@@ -12,7 +12,7 @@ module "eks" {
 
   eks_managed_node_groups = {    
     fiap = {
-      min_size     = 1
+      min_size     = 3
       max_size     = 10
       desired_size = 3
       vpc_security_group_ids = [aws_security_group.ssh_cluster.id]
